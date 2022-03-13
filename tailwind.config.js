@@ -48,6 +48,9 @@ module.exports = {
         'tiny': '11px',
         'ultratiny': '9px',
       },
+      minWidth: {
+        lg:'620px',
+      },
     },
   },
   plugins: [],

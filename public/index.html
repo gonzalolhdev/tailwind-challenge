@@ -40,15 +40,15 @@
   <body
     class="flex flex-col bg-primary-signUpBg text-white mx-auto max-w-8xl font-Raleway"
   >
-    <header class="">
+    <header class="pt-8 px-10">
       <div class="flex w-full px-10 items-center mt-10">
         <div class="flex-1">
           <img src="../images/logo.svg" alt="logo" class="" />
         </div>
-        <ul class="flex items-center space-x-6">
-          <li class="cursor-pointer hover:underline">Features</li>
-          <li class="cursor-pointer hover:underline">Team</li>
-          <li class="cursor-pointer hover:underline">Sign In</li>
+        <ul class="flex items-center space-x-14">
+          <li class="cursor-pointer hover:underline hover:font-bold">Features</li>
+          <li class="cursor-pointer hover:underline hover:font-bold">Team</li>
+          <li class="cursor-pointer hover:underline hover:font-bold">Sign In</li>
         </ul>
       </div>
     </header>
@@ -139,7 +139,7 @@
           </div>
         </div>
       </section>
-      <section class="py-24 bg-primary-mainBg">
+      <section class="py-24 bg-primary-mainBg ">
         <div
           class="flex flex-col items-center md:flex-row md:mx-auto md:space-x-10 w-10/12"
         >
@@ -151,18 +151,18 @@
           >
             <span class="text-4xl font-bold"> Stay productive,</span>
             <span class="text-4xl font-bold"> wherever you are </span>
-            <span class="text-lg">
+            <span class="text-md font-Open">
               Never let location be an issue when accessing your files. Fylo has
               you covered for all of your file storage needs.
             </span>
-            <span class="text-lg">
+            <span class="text-md font-Open">
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required.
             </span>
             <div
               class="w-fit border border-transparent text-accent-cyan border-b-accent-cyan hover:border-b-white hover:text-white"
             >
-              <a class="flex items-center text-lg cursor-pointer"
+              <a class="flex items-center text-md font-Open cursor-pointer"
                 >See how Fylo works
                 <i class="fa-solid fa-circle-arrow-right ml-3"></i>
               </a>
@@ -248,38 +248,106 @@
           </div>
         </div>
       </section>
-      <section class="py-24 bg-pink-800 relative">
-        <div
-          class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col text-center min-w-max p-10 space-y-10 bg-primary-signUpBg rounded-md shadow-earlyacess"
-        >
-          <div class="text-3xl font-bold">Get early access today</div>
-          <div class="text-sm">
+    </main>
+
+    <footer class="pt-56 py-24 bg-primary-footerBg relative">
+      <div
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-20 py-12 bg-primary-signUpBg rounded-md shadow-earlyacess"
+      >
+        <div class="flex flex-col px-10 text-center">
+          <div class="text-3xl mb-6 font-bold">Get early access today</div>
+          <div class="text-sm text-white text-opacity-80 mb-8 min-w-lg">
             It only takes a minute to sign up and our free starter tier is
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </div>
-          <div class="flex space-x-5">
-            <input type="text" placeholder="email@example.com" class="flex-1 rounded-full py-4"/>
-            <button
-              class="text-sm font-bold bg-accent-blue rounded-full py-3 px-8"
+        </div>
+        <div class="flex space-x-5">
+          <input
+            type="text"
+            placeholder="email@example.com"
+            class="flex-1 rounded-full px-10 py-3 text-sm text-black"
+          />
+          <button
+            class="text-sm font-bold bg-accent-blue hover:bg-accent-cyan rounded-full py-3 px-8"
+          >
+            Get Started For Free
+          </button>
+        </div>
+      </div>
+      <div class="relative pl-32 pr-20 font-Open font-normal">
+        <img src="../images/logo.svg" alt="logo" class="block" />
+        <div class="flex space-x-20 mt-8">
+          <div class="flex grow max-w-sm">
+            <i class="fa-solid fa-location-dot mr-8 pt-1.5 text-lg"></i
+            ><span class="text-white text-opacity-80">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </span>
+          </div>
+          <div class="flex flex-col grow space-y-4">
+            <div>
+              <i
+                class="fa-solid fa-phone-volume ml-1 transform -rotate-45 text-lg"
+              ></i>
+              <span class="text-white text-opacity-80 text-sm ml-6"
+                >+1-543-123-4567</span
+              >
+            </div>
+            <div>
+              <svg
+                class="svg-icon"
+                style="
+                  width: 1.3em;
+                  height: 1.3em;
+                  fill: currentColor;
+                  overflow: hidden;
+                  display: inline;
+                "
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M853.333333 768h-85.333333V394.666667L512 554.666667 256 394.666667V768H170.666667V256h51.2l290.133333 181.333333L802.133333 256H853.333333m0-85.333333H170.666667c-47.36 0-85.333333 37.973333-85.333334 85.333333v512a85.333333 85.333333 0 0 0 85.333334 85.333333h682.666666a85.333333 85.333333 0 0 0 85.333334-85.333333V256a85.333333 85.333333 0 0 0-85.333334-85.333333z"
+                  fill=""
+                />
+              </svg>
+              <span class="text-white text-opacity-80 text-sm ml-6">
+                example@fylo.com</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-col space-y-4">
+            <div class="text-white text-opacity-80">About Us</div>
+            <div class="text-white text-opacity-80">Jobs</div>
+            <div class="text-white text-opacity-80">Press</div>
+            <div class="text-white text-opacity-80">Blog</div>
+          </div>
+          <div class="flex flex-col space-y-4">
+            <div class="text-white text-opacity-80">Contact Us</div>
+            <div class="text-white text-opacity-80">Terms</div>
+            <div class="text-white text-opacity-80">Privacy</div>
+          </div>
+          <div class="flex space-x-3 pl-8">
+            <div
+              class="flex items-center justify-center rounded-full border border-white border-opacity-75 h-8 w-8"
             >
-              Get Started For Free
-            </button>
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </div>
+            <div
+              class="flex items-center justify-center rounded-full border border-white border-opacity-75 h-8 w-8"
+            >
+              <i class="fa-brands fa-twitter text-sm"></i>
+            </div>
+            <div
+              class="flex items-center justify-center rounded-full border border-white border-opacity-75 h-8 w-8"
+            >
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua +1-543-123-4567
-      example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+      </div>
     </footer>
   </body>
 </html>
